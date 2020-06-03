@@ -1,13 +1,11 @@
 <template>
   <div >
-
-    
+      <add></add>
   </div>
 </template>
 
 <script>
-import card from '@/components/card'
-
+import add from '@/components/addTask'
 export default {
   data () {
     return {
@@ -16,7 +14,7 @@ export default {
   },
 
   components: {
-    card
+    add
   },
 
   methods: {
