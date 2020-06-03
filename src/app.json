@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/main",
     "pages/achieve/main",
+    "pages/add/main",
     "pages/my/main"
   ],
   "window": {

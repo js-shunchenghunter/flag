@@ -1,81 +1,74 @@
 <template>
-  <div >
-      <add></add>
+  <div>
+    <div class="title">开启你的flag</div>
+    <van-button @click="addTask" type="primary">新建flag</van-button>
   </div>
 </template>
 
 <script>
-import add from '@/components/addTask'
-export default {
-  data () {
-    return {
-
+  export default {
+    data() {
+      return {
+      }
+    },
+    components: {},
+    methods: {
+      addTask() {
+        wx.navigateTo({
+          url: 'pages/add/main'
+        })
+      }
+    },
+    created() {
+      // let app = getApp()
     }
-  },
-
-  components: {
-    add
-  },
-
-  methods: {
-
-  },
-
-  created () {
-    // let app = getApp()
   }
-}
 </script>
 
 <style scoped>
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-.all{
-  width:7.5rem;
-  height:1rem;
-  background-color:blue;
-}
-.all:after{
-  display:block;
-  content:'';
-  clear:both;
-}
-.left{
-  float:left;
-  width:3rem;
-  height:1rem;
-  background-color:red;
-}
-
-.right{
-  float:left;
-  width:4.5rem;
-  height:1rem;
-  background-color:green;
-}
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
+  .userinfo-nickname {
+    color: #aaa;
+  }
+  .usermotto {
+    margin-top: 150px;
+  }
+  .form-control {
+    display: block;
+    padding: 0 12px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+  }
+  .all {
+    width: 7.5rem;
+    height: 1rem;
+    background-color: blue;
+  }
+  .all:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .left {
+    float: left;
+    width: 3rem;
+    height: 1rem;
+    background-color: red;
+  }
+  .right {
+    float: left;
+    width: 4.5rem;
+    height: 1rem;
+    background-color: green;
+  }
 </style>
